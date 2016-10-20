@@ -1,0 +1,23 @@
+{
+  "name": "what-a-day",
+  "version": "1.0.0",
+  "description": "Appli jour de la semaine",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nomilol/what-a-day.git"
+  },
+  "author": "Lezin Axel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nomilol/what-a-day/issues"
+  },
+  "homepage": "https://github.com/Nomilol/what-a-day#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "moment": "^2.15.1"
+  }
+}
