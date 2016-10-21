@@ -24,7 +24,7 @@
 		},
 		printResult : function(){
 			
-			
+			 
 		},
 	}
 
