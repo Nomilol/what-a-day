@@ -1,3 +1,47 @@
 .userInput{
-	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
 }
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	margin-top: 10%;
+}
+
+body{
+	background-color: #34314c ;
+}
+
+#day, #month, #year{
+	border : 2px solid #47b8e0;
+	background-color: transparent;
+	color: #47b8e0;
+}
+
+#month, span , #label{
+	color: #47b8e0;
+}
+
+#verifier{
+	background-color: transparent;
+	border: 2px solid #47b8e0;
+	color: #47b8e0;
+}
+
+
+
+
+
+
+
+/*#ff7473
+#fff
+#34314c
+#47b8e0
+#9055A2;
+#D499B9;
+*/
