@@ -1,6 +1,7 @@
 (function(){
 	var app = {
 		dayValue : ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"],
+		result : null,
 		init : function(){
 			app.listeners();
 		},
@@ -15,9 +16,8 @@
 		var userMonth = $('#month').val();
 		var userYear = $('#year').val();
 		var userDate = moment({year : userYear , month : userMonth , day : userDay});
-		var result = (moment(userDate).format('dddd'));
-		app.printResult();
-		$('#showDay').html(result);
+		app.result = (moment(userDate).format('dddd'));
+		$('#showDay').html(app.result);
 		
 		
 		
