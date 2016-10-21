@@ -1,9 +1,6 @@
 (function(){
 	var app = {
-
-		// clé : valeur,
-		// clé : valeur,
-		// clé : valeur,
+		dayValue : ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"],
 		init : function(){
 			app.listeners();
 		},
@@ -17,20 +14,25 @@
 		var userDay = $('#day').val();
 		var userMonth = $('#month').val();
 		var userYear = $('#year').val();
-		var userDate = userDay + userMonth + userYear;
-		console.log(userDate);
-		console.log(userDay);
-		console.log(userMonth);
-		console.log(userYear);
-
+		var userDate = moment({year : userYear , month : userMonth , day : userDay});
+		var result = (moment(userDate).format('dddd'));
+		app.printResult();
+		$('#showDay').html(result);
+		
+		
+		
 		},
 		printResult : function(){
-
+			
+			
 		},
 	}
 
 	app.init();
 })();
+		
+
+
 
 
 
