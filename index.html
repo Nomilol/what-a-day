@@ -7,42 +7,43 @@
 </head>
 <body>
 
+	<div id="hide">
+		
+		<div id="error"></div>
 
-	<div id="error"></div>
-	
-	<div class="userInput">
-		<div>
-			<span>Jour</span><br>
-			<input type="number" id="day">
+		<div class="userInput">
+			<div>
+				<span>Jour</span><br>
+				<input type="number" id="day" value="22">
+			</div>
+			<div>
+				<span>Mois</span><br> 
+				<select name="select" id="month">
+					<option value="00">Janvier</option>
+					<option value="01">Février</option>
+					<option value="02">Mars</option>
+					<option value="03">Avril</option>
+					<option value="04">Mai</option>
+					<option value="05">Juin</option>
+					<option value="06">Juillet</option>
+					<option value="07" selected>Août</option>
+					<option value="08">Septembre</option>
+					<option value="09">Octobre</option>
+					<option value="10">Novembre</option>
+					<option value="11">Décembre</option>
+				</select>
+			</div>
+			<div>
+				<span>Année</span><br>
+				<input type="number" id="year" value="1992">
+			</div>
+			<span id="showDay"></span>
 		</div>
-		<div>
-			<span>Mois</span><br> 
-			<select name="select" id="month">
-				<option value="00">Janvier</option>
-				<option value="01">Février</option>
-				<option value="02">Mars</option>
-				<option value="03">Avril</option>
-				<option value="04">Mai</option>
-				<option value="05">Juin</option>
-				<option value="06">Juillet</option>
-				<option value="07" selected>Août</option>
-				<option value="08">Septembre</option>
-				<option value="09">Octobre</option>
-				<option value="10">Novembre</option>
-				<option value="11">Décembre</option>
-			</select>
+		<div class="button">
+			<button id="verifier"><label>Vérifier</label></button>
 		</div>
-		<div>
-			<span>Année</span><br>
-			<input type="number" id="year">
-		</div>
-		<span id="showDay" "></span>
 	</div>
-	<div class="button">
-		<button id="verifier"><label>Vérifier</label></button>
-	</div>
-</div>
-<div class="overlay"></div>
+	<div id="overlay"></div>
 
 
 
@@ -62,8 +63,9 @@
 
 
 
-<script src='node_modules/jquery/dist/jquery.js'></script>
-<script src='node_modules/moment/moment.js'></script>
-<script src='app.js'></script>
+
+	<script src='node_modules/jquery/dist/jquery.js'></script>
+	<script src='node_modules/moment/moment.js'></script>
+	<script src='app.js'></script>
 </body>
 </html>
