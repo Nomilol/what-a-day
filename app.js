@@ -10,7 +10,8 @@
 			$('#overlay').on('click','#restart' , app.restart);
 		},
 		restart : function(){
-			console.log('restart');
+			$('#overlay').hide();
+			$('#hide').show();
 		},
 		clickValider : function(){
 			var userDay = $('#day').val();
